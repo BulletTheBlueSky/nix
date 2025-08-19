@@ -18,10 +18,10 @@
   services.udiskie.enable = true;
 
   home.packages = with pkgs; [
-    # command line utilities
+    # cli
     ffmpeg
 
-    # apps
+    # gui
     calibre
     imv
     qbittorrent
@@ -33,6 +33,5 @@
     lxqt.pavucontrol-qt
     wl-clipboard
     xdg-desktop-portal-gtk
-    # 
   ];
 }
