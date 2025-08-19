@@ -27,8 +27,8 @@
 	package = pkgs.noto-fonts-color-emoji;
       };
       monospace = {
-        name = "JetBrainsMono Nerd Font Mono";
-	package = pkgs.nerd-fonts.jetbrains-mono;
+        name = "CaskaydiaMono Nerd Font";
+	package = pkgs.nerd-fonts.caskaydia-mono;
       };
       sansSerif = {
 	name = "DejaVu Sans";
@@ -41,9 +41,9 @@
 
       sizes = {
 	terminal = 6;
-	desktop = 6;
-	popups = 6;
-	applications = 8;
+	desktop = 5;
+	popups = 5;
+	applications = 6;
       };
     };
 

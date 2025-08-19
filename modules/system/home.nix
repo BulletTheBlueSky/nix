@@ -7,6 +7,6 @@
   home.homeDirectory = "/home/${user}";
 
   imports = [
-    ./home-manager
+    ../home-manager
   ];
 }

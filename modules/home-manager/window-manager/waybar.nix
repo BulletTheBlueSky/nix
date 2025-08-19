@@ -10,7 +10,6 @@
       mainBar = {
 	layer = "top";
 	position = "top";
-	# height = 2;
 	fixed-center = true;
 	modules-left = ["hyprland/workspaces"];
 	modules-center = ["clock#date" "clock#time"];
