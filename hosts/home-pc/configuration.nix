@@ -1,10 +1,19 @@
-{ config, lib, pkgs, ... }:
-
+{ config, lib, pkgs, user, inputs,... }:
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      inputs.home-manager.nixosModules.home-manager
+      {
+	home-manager.useGlobalPkgs = true;
+	home-manager.useUserPackages = true;
+	home-manager.extraSpecialArgs = {inherit user;};
+	home-manager.users.${user} = ../../modules/home.nix;
+      }
+      inputs.stylix.nixosModules.stylix
+      ../../modules/stylix.nix
     ];
+
 
   boot.loader = {
     efi = {
@@ -42,7 +51,7 @@
 
   programs.hyprland.enable = true;
 
-  users.users.b = {
+  users.users.${user} = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; 
     packages = with pkgs; [
