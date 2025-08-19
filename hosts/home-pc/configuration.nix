@@ -54,6 +54,8 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
+    nh
+    nix-output-monitor
   ];
   
   programs.ssh.startAgent = true;

@@ -3,15 +3,6 @@
   wayland.windowManager.hyprland.systemd.enable = true;
 
   wayland.windowManager.hyprland.settings = {
-    env = [
-      "NIXOS_OZONE_WL,1"
-      "XDG_CURRENT_DESKTOP,Hyprland"
-      "XDG_SESSION_DESKTOP,Hyprland"
-      "XDG_SESSION_TYPE,wayland"
-      "QT_QPA_PLATFORM,wayland"
-      "XDG_SCREENSHOTS_DIR_,$HOME/screens"
-      "$TERMINAL, foot"
-    ];
     
     exec-once = [
       "waybar"
