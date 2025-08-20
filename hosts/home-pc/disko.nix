@@ -1,9 +1,8 @@
 {
-{
   disko.devices = {
     disk = {
       main = {
-	device = "/dev/sda1";
+	device = "/dev/disk/by-uuid/823DCE91-6E32-47B8-9EF2-3CC4C198F4B6";
 	type = "disk";
 	contenct = {
 	  type = "gpt";
